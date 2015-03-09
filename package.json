@@ -1,19 +1,20 @@
 {
   "name": "generator-systemjs",
   "version": "1.0.0",
-  "description": "Yeoman generator for SystemJS / ES6 / jspm / Angular / React",
+  "description": "Yeoman generator for SystemJS / ES6 (babel) / jspm / Angular / React",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-		"systemjs",
-		"ES6",
-		"jspm",
-		"gulp",
-		"angular",
-		"react",
-		"gulp-helpers",
-		"jsx",
+    "systemjs",
+    "ES6",
+    "babel",
+    "jspm",
+    "gulp",
+    "angular",
+    "react",
+    "jsx",
+    "gulp-helpers",
     "yeoman-generator"
   ],
   "author": "Jon Stevens <latchkey@gmail.com>",
