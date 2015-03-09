@@ -1,0 +1,17 @@
+{
+  "name": "generator-systemjs",
+  "version": "1.0.0",
+  "description": "Yeoman generator for SystemJS / ES6 / jspm / Angular / React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Jon Stevens <latchkey@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.18.10"
+  }
+}

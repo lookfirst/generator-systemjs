@@ -1,0 +1,35 @@
+#sudo: false  # send things to the new build platform
+language: node_js
+node_js:
+- '0.12'
+- '0.11'
+- '0.10'
+branches:
+  only:
+  - master
+before_install:
+- env
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- ./.travis.chrome.sh
+- npm install jspm
+- jspm config endpoints.github.auth $GH_TOKEN
+install:
+- npm install
+script:
+- npm test
+- npm run-script protractor-setup
+- export SITUATION=production
+- gulp run &
+- sleep 120
+- npm run-script protractor-run
+cache:
+  directories:
+  - node_modules
+  - jspm_packages
+notifications:
+  email:
+  - latchkey@gmail.com
+env:
+  global:
+  - secure: Dm2z7xuOcqK+KauO6lQVyKaHgCEX0bjS6mCbwFofETa5XQABQIuy9iS9z56LxmPlw4cor12FvxCArNLmKFNnwOCd5JZ+C2qTKaDLPNWsIHL0B49AIFL6RBHAJ7htAdCH00t/Jp1JHKjcBEl1srQKPV7CZwDQlIHHzPwC4ll3GQ4=
