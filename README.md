@@ -1,4 +1,5 @@
 [![npm dependencies](https://david-dm.org/lookfirst/generator-systemjs.svg)](https://david-dm.org/lookfirst/generator-systemjs)
+[![Build Status](https://travis-ci.org/lookfirst/generator-systemjs.svg?branch=master)](https://travis-ci.org/lookfirst/generator-systemjs)
 
 # Yeoman generator for SystemJS / ES6 / jspm / Angular / React
 
