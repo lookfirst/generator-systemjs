@@ -17,7 +17,7 @@ module.exports = yeoman.generators.Base.extend({
 			this.template('_editorconfig', '.editorconfig');
 			this.template('_gitignore', '.gitignore');
 			this.template('_jshintrc', '.jshintrc');
-			this.template('_travis.yml');
+			this.template('_travis.yml', '.travis.yml');
 			this.template('_travis.chrome.sh', '.travis.chrome.sh');
 			this.template('gulpfile.js');
 			this.template('karma.conf.js');
@@ -32,6 +32,10 @@ module.exports = yeoman.generators.Base.extend({
 		}
 	},
 	install: function() {
-		this.npmInstall();
+		this.installDependencies({
+			bower: false,
+			npm: true,
+			skipInstall: this.options['skip-install']
+		});
 	}
 });
