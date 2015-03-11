@@ -20,10 +20,10 @@ System.config({
     "json": "github:systemjs/plugin-json@0.1.0",
     "ngreact": "npm:ngreact@0.1.4",
     "oclazyload": "npm:oclazyload@0.6.3",
-    "oclazyload-systemjs-router": "npm:oclazyload-systemjs-router@1.0.6",
+    "oclazyload-systemjs-router": "npm:oclazyload-systemjs-router@1.0.7",
     "plugin-css": "github:systemjs/plugin-css@0.1.5",
     "plugin-json": "github:systemjs/plugin-json@0.1.0",
-    "react": "npm:react@0.12.2",
+    "react": "npm:react@0.13.0",
     "todomvc-app-css": "npm:todomvc-app-css@1.0.1",
     "todomvc-common": "npm:todomvc-common@1.0.1",
     "ui-router-extras": "npm:ui-router-extras@0.0.13",
@@ -742,6 +742,12 @@ System.config({
       "querystring": "github:jspm/nodelibs-querystring@0.1.0"
     },
     "npm:oclazyload-systemjs-router@1.0.6": {
+      "angular": "npm:angular@1.3.14",
+      "angular-ui-router": "npm:angular-ui-router@0.2.13",
+      "oclazyload": "npm:oclazyload@0.6.3",
+      "ui-router-extras": "npm:ui-router-extras@0.0.13"
+    },
+    "npm:oclazyload-systemjs-router@1.0.7": {
       "angular": "npm:angular@1.3.14",
       "angular-ui-router": "npm:angular-ui-router@0.2.13",
       "oclazyload": "npm:oclazyload@0.6.3",
