@@ -40,7 +40,6 @@ describe('systemjs:app', function() {
 			'src/app/todo/todoModule.js',
 			'src/app/app.js',
 			'src/app/routes.json',
-			'src/common/utils/routing.js',
 			'src/index.tpl.html',
 			'src/system.config.js'
 		]);
