@@ -20,7 +20,7 @@ var path = {
 	indexHtmlOutput: 'dist/index.html',
 	routes: './src/app/routes.json',
 	minify: 'dist/**/*.js',
-	assets: ['./src/**/*.svg', './src/**/*.woff', './src/**/*.ttf', './src/**/*.png', './src/**/*.ico', './src/**/*.gif', './src/**/*.jpg', './src/**/*.eot'],
+	assets: ['./src/**/*.css', './src/**/*.svg', './src/**/*.woff', './src/**/*.ttf', './src/**/*.png', './src/**/*.ico', './src/**/*.gif', './src/**/*.jpg', './src/**/*.eot'],
 	json: './src/**/*.json',
 	index: './src/index.tpl.html',
 	watch: './src/**',
@@ -93,7 +93,7 @@ taskMaker.defineTask('es6', {taskName: 'es6', src: [path.source, path.react], de
 taskMaker.defineTask('es6', {taskName: 'es6-coffee', src: path.coffee, dest: path.output, coffee: true, ngAnnotate: true});
 taskMaker.defineTask('es6', {taskName: 'es6-e2e', src: path.e2e, dest: path.e2eOutput, taskDeps: ['clean-e2e']});
 taskMaker.defineTask('ngHtml2Js', {taskName: 'html', src: path.templates, dest: path.output});
-taskMaker.defineTask('copy', {taskName: 'copy', src: path.assets, dest: path.output});
+taskMaker.defineTask('copy', {taskName: 'assets', src: path.assets, dest: path.output});
 taskMaker.defineTask('copy', {taskName: 'json', src: path.json, dest: path.output, changed: {extension: '.json'}});
 taskMaker.defineTask('copy', {taskName: 'index.html', src: path.index, dest: path.output, rename: 'index.html'});
 taskMaker.defineTask('copy', {taskName: 'cache-bust-index.html', src: path.index, dest: path.output, rename: 'index.html', replace: cacheBustConfig});
@@ -106,7 +106,7 @@ taskMaker.defineTask('browserSync', {taskName: 'serve', config: serverOptions, h
 taskMaker.defineTask('routeBundler', {taskName: 'routeBundler', config: routeBundleConfig});
 
 gulp.task('compile', function(callback) {
-	return runSequence(['less', 'less-themes', 'html', 'es6', 'es6-coffee', 'json', 'copy'], callback);
+	return runSequence(['less', 'less-themes', 'html', 'es6', 'es6-coffee', 'json', 'assets'], callback);
 });
 
 gulp.task('recompile', function(callback) {
