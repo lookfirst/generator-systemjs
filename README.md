@@ -14,4 +14,6 @@ npm install -g gulp jspm yo generator-systemjs
 ```
 mkdir myapp && cd myapp
 yo systemjs
+gulp run
+http://localhost:9000
 ```
