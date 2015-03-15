@@ -20,9 +20,9 @@ System.config({
     "json": "github:systemjs/plugin-json@0.1.0",
     "ngreact": "github:davidchang/ngReact@0.1.4",
     "oclazyload": "github:ocombe/ocLazyLoad@0.6.3",
-    "oclazyload-systemjs-router": "github:lookfirst/oclazyload-systemjs-router@1.1.3",
+    "oclazyload-systemjs-router": "github:lookfirst/oclazyload-systemjs-router@1.1.4",
     "react": "github:facebook/react@0.13.0",
-    "todomvc-app-css": "github:tastejs/todomvc-app-css@1.0.2",
+    "todomvc-app-css": "github:tastejs/todomvc-app-css@1.0.3",
     "todomvc-common": "github:tastejs/todomvc-common@1.0.1",
     "ui-router-extras": "github:christopherthielen/ui-router-extras@0.0.13",
     "github:angular-ui/ui-router@0.2.13": {
@@ -69,7 +69,7 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
-    "github:lookfirst/oclazyload-systemjs-router@1.1.3": {
+    "github:lookfirst/oclazyload-systemjs-router@1.1.4": {
       "angular": "github:angular/bower-angular@1.3.14",
       "angular-ui-router": "github:angular-ui/ui-router@0.2.13",
       "oclazyload": "github:ocombe/ocLazyLoad@0.6.3",
