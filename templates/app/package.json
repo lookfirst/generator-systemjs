@@ -2,7 +2,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-helpers": "^1.2.1",
+    "gulp-helpers": "^1.2.5",
     "jspm": "^0.14.0",
     "protractor": "^1.8.0"
   },
