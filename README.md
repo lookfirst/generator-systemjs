@@ -3,7 +3,7 @@
 
 # Yeoman generator for SystemJS / ES6 / jspm / Angular / React
 
-This project is the generator for the [SystemJS Seed project](https://github.com/lookfirst/systemjs-seed/). Please see that project for more details about what it offers.
+This project is the generator for the [SystemJS Seed project](https://github.com/lookfirst/systemjs-seed/) and [SystemJS Material Start ES6 project](https://github.com/lookfirst/systemjs-material-start). Please see those projects for more details and examples.
 
 # Usage
 
