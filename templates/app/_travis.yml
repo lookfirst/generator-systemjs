@@ -3,7 +3,6 @@ language: node_js
 node_js:
 - '0.12'
 - '0.11'
-- '0.10'
 branches:
   only:
   - master
@@ -13,7 +12,7 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 - ./.travis.chrome.sh
 - npm install jspm
-- jspm config endpoints.github.auth $GH_TOKEN
+- jspm config registries.github.auth $GH_TOKEN
 install:
 - npm install
 script:
