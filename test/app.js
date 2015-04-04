@@ -41,7 +41,7 @@ describe('systemjs:app', function() {
 			'src/app/app.js',
 			'src/app/routes.json',
 			'src/index.tpl.html',
-			'src/system.config.js'
+			'system.config.js'
 		]);
 	});
 
