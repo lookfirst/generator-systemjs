@@ -25,7 +25,8 @@ describe('systemjs:app', function() {
 			'karma.conf.js',
 			'package.json',
 			'protractor.conf.js',
-			'README.md'
+			'README.md',
+			'system.config.js'
 		]);
 	});
 
@@ -40,8 +41,7 @@ describe('systemjs:app', function() {
 			'src/app/todo/todoModule.js',
 			'src/app/app.js',
 			'src/app/routes.json',
-			'src/index.tpl.html',
-			'system.config.js'
+			'src/index.tpl.html'
 		]);
 	});
 

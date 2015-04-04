@@ -24,6 +24,7 @@ module.exports = yeoman.generators.Base.extend({
 			this.template('package.json');
 			this.template('protractor.conf.js');
 			this.template('README.md');
+			this.template('system.config.js');
 		},
 		directories: function() {
 			this.directory('src');
