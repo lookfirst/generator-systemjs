@@ -2,6 +2,7 @@
 
 var yeoman = require('yeoman-generator');
 var path = require('path');
+var _s = require('underscore.string');
 
 module.exports = yeoman.generators.Base.extend({
 	initializing: function() {
@@ -9,8 +10,8 @@ module.exports = yeoman.generators.Base.extend({
 
 		this.argument('appname', {type: String, required: false});
 		this.appname = this.appname || path.basename(process.cwd());
-		this.appname = this._.camelize(this._.slugify(
-			this._.humanize(this.appname)));
+		this.appname = _s.camelize(_s.slugify(
+			_s.humanize(this.appname)));
 	},
 	writing: {
 		files: function() {
