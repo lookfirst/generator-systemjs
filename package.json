@@ -17,7 +17,7 @@
   "author": "Jon Stevens <latchkey@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "yeoman-generator": "^0.18.10"
+    "yeoman-generator": "^0.19.1"
   },
 	"devDependencies": {
 		"mocha": "*"
