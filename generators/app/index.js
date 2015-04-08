@@ -19,7 +19,6 @@ module.exports = yeoman.generators.Base.extend({
 			this.template('_gitignore', '.gitignore');
 			this.template('_jshintrc', '.jshintrc');
 			this.template('_travis.yml', '.travis.yml');
-			this.template('_travis.chrome.sh', '.travis.chrome.sh');
 			this.template('gulpfile.js');
 			this.template('karma.conf.js');
 			this.template('package.json');
