@@ -33,3 +33,7 @@ exports.config = {
 		showColors: true // Use colors in the command line report.
 	}
 };
+
+if (process.env.TRAVIS) {
+	exports.config.capabilities.chromeOptions.binary = __dirname + '/chrome-linux/chrome';
+}

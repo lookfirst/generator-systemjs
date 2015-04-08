@@ -20,7 +20,6 @@ describe('systemjs:app', function() {
 			'.gitignore',
 			'.jshintrc',
 			'.travis.yml',
-			'.travis.chrome.sh',
 			'gulpfile.js',
 			'karma.conf.js',
 			'package.json',

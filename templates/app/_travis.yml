@@ -10,7 +10,7 @@ before_install:
 - env
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
-- ./.travis.chrome.sh
+- curl -Lo chrome.zip https://download-chromium.appspot.com/dl/Linux_x64 && unzip chrome.zip
 - npm install jspm
 - jspm config registries.github.auth $GH_TOKEN
 install:
@@ -20,15 +20,12 @@ script:
 - npm run-script protractor-setup
 - export SITUATION=production
 - gulp run &
-- sleep 120
+- sleep 60
 - npm run-script protractor-run
 cache:
   directories:
   - node_modules
   - jspm_packages
-notifications:
-  email:
-  - latchkey@gmail.com
 env:
   global:
-  - secure: Dm2z7xuOcqK+KauO6lQVyKaHgCEX0bjS6mCbwFofETa5XQABQIuy9iS9z56LxmPlw4cor12FvxCArNLmKFNnwOCd5JZ+C2qTKaDLPNWsIHL0B49AIFL6RBHAJ7htAdCH00t/Jp1JHKjcBEl1srQKPV7CZwDQlIHHzPwC4ll3GQ4=
+  - secure: FILL_IN_YOUR_OWN # https://github.com/jspm/jspm-cli/wiki/Registries#travis-ci
