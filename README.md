@@ -5,6 +5,10 @@
 
 This project is the generator for the [SystemJS Seed project](https://github.com/lookfirst/systemjs-seed/) and [SystemJS Material Start ES6 project](https://github.com/lookfirst/systemjs-material-start). Please see those projects for more details and examples.
 
+# Note!
+
+This project is a bit out of date now due to jspm being a bit of a moving target. I've been slammed with starting a new business and haven't had a chance to keep things up to date. PR's welcome!
+
 # Usage
 
 ```
